@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="gcm_defaultSenderId" translatable="false">369086481525</string>
+    <string name="google_api_key" translatable="false">AIzaSyCDw_1FfQ6Bg4xMMADGn7eFBTs60wmXrfw</string>
+    <string name="google_app_id" translatable="false">1:369086481525:android:d8d7527356725d7318643c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCDw_1FfQ6Bg4xMMADGn7eFBTs60wmXrfw</string>
+    <string name="google_storage_bucket" translatable="false">web-app-e4d56.firebasestorage.app</string>
+    <string name="project_id" translatable="false">web-app-e4d56</string>
     <style name="Theme.CivicPriority" parent="android:Theme.Material.NoActionBar">
         <item name="android:statusBarColor">#FF0D121C</item>
         <item name="android:navigationBarColor">#FF0D121C</item>
