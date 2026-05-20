@@ -1,0 +1,25 @@
+/* Ranking Page */
+.page { padding-bottom:3rem; }
+.hdr  { margin-bottom:1.8rem; }
+.title{ font-family:var(--head); font-size:1.8rem; font-weight:700; letter-spacing:-0.02em; }
+.sub  { color:var(--ink2); font-size:0.85rem; margin-top:0.25rem; line-height:1.65; max-width:600px; }
+
+.tableWrap { background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); overflow:auto; box-shadow:var(--sh-card); backdrop-filter:blur(12px); }
+.table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+.table thead tr { border-bottom:1px solid var(--border); }
+.table th { font-family:var(--mono); font-size:0.58rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted); padding:0.9rem 1rem; text-align:left; white-space:nowrap; background:rgba(255,255,255,0.02); }
+.row { border-bottom:1px solid rgba(255,255,255,0.04); transition:background .15s; }
+.row:last-child { border-bottom:none; }
+.row:hover { background:rgba(255,255,255,0.03); }
+.overridden { background:rgba(249,115,22,0.05) !important; }
+.table td { padding:0.8rem 1rem; vertical-align:middle; }
+
+.rank { font-family:var(--mono); font-size:1rem; font-weight:900; }
+.titleCell  { max-width:220px; }
+.issueTitle { font-weight:600; font-size:0.85rem; }
+.reporter   { font-family:var(--mono); font-size:0.62rem; color:var(--muted); margin-top:0.15rem; }
+.mono { font-family:var(--mono); font-size:0.78rem; }
+.sevLabel { font-family:var(--mono); font-size:0.58rem; color:var(--muted); }
+.cat  { font-family:var(--mono); font-size:0.62rem; padding:0.14rem 0.45rem; background:rgba(255,255,255,0.06); border:1px solid var(--border); border-radius:100px; color:var(--ink2); white-space:nowrap; }
+.overridePill { font-family:var(--mono); font-size:0.58rem; padding:0.14rem 0.45rem; background:rgba(249,115,22,0.12); border:1px solid rgba(249,115,22,0.3); border-radius:100px; color:var(--warn); }
+.noPill { color:var(--muted); }

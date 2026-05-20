@@ -1,0 +1,177 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.civic.priority"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:5:5-65
+11-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+12-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:6:5-76
+12-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:6:22-73
+13    <uses-permission
+13-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:7:5-8:38
+14        android:name="android.permission.READ_EXTERNAL_STORAGE"
+14-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:7:22-77
+15        android:maxSdkVersion="32" />
+15-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:8:9-35
+16
+17    <uses-feature
+17-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:10:5-85
+18        android:name="android.hardware.camera"
+18-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:10:19-57
+19        android:required="false" />
+19-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:10:58-82
+20
+21    <permission
+21-->[androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+22        android:name="com.civic.priority.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.civic.priority.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:12:5-40:19
+28        android:allowBackup="true"
+28-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:13:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+30        android:debuggable="true"
+31        android:extractNativeLibs="false"
+32        android:icon="@android:drawable/sym_def_app_icon"
+32-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:14:9-58
+33        android:label="CivicPriority"
+33-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:15:9-38
+34        android:roundIcon="@android:drawable/sym_def_app_icon"
+34-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:16:9-63
+35        android:supportsRtl="true"
+35-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:17:9-35
+36        android:theme="@style/Theme.CivicPriority" >
+36-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:18:9-51
+37        <activity
+37-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:21:9-29:20
+38            android:name="com.civic.priority.MainActivity"
+38-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:22:13-41
+39            android:exported="true"
+39-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:23:13-36
+40            android:theme="@style/Theme.CivicPriority" >
+40-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:24:13-55
+41            <intent-filter>
+41-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:25:13-28:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:26:17-69
+42-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:26:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:27:17-77
+44-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:27:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <provider
+49            android:name="androidx.core.content.FileProvider"
+49-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:32:13-62
+50            android:authorities="com.civic.priority.fileprovider"
+50-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:33:13-64
+51            android:exported="false"
+51-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:34:13-37
+52            android:grantUriPermissions="true" >
+52-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:35:13-47
+53            <meta-data
+53-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:36:13-38:54
+54                android:name="android.support.FILE_PROVIDER_PATHS"
+54-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:37:17-67
+55                android:resource="@xml/file_paths" />
+55-->/Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:38:17-51
+56        </provider>
+57
+58        <activity
+58-->[androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:23:9-25:39
+59            android:name="androidx.activity.ComponentActivity"
+59-->[androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:24:13-63
+60            android:exported="true" />
+60-->[androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:25:13-36
+61        <activity
+61-->[androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+62            android:name="androidx.compose.ui.tooling.PreviewActivity"
+62-->[androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+63            android:exported="true" />
+63-->[androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+64
+65        <provider
+65-->[androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+66            android:name="androidx.startup.InitializationProvider"
+66-->[androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+67            android:authorities="com.civic.priority.androidx-startup"
+67-->[androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+68            android:exported="false" >
+68-->[androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+69            <meta-data
+69-->[androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+70-->[androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+71                android:value="androidx.startup" />
+71-->[androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+74                android:value="androidx.startup" />
+74-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+75            <meta-data
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+77                android:value="androidx.startup" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+78        </provider>
+79
+80        <receiver
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+81            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+82            android:directBootAware="false"
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+83            android:enabled="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+84            android:exported="true"
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+85            android:permission="android.permission.DUMP" >
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+87                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+88            </intent-filter>
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+90                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+93                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+96                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+97            </intent-filter>
+98        </receiver>
+99    </application>
+100
+101</manifest>

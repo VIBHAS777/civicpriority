@@ -1,0 +1,401 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:31:9-39:20
+	android:grantUriPermissions
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:35:13-47
+	android:authorities
+		INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:33:13-64
+	android:exported
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:32:13-62
+manifest
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:2:1-42:12
+MERGED from [androidx.navigation:navigation-common:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/f8639d1cbef77607b4dc3ca699431990/transformed/navigation-common-2.7.6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/7679cd0cd90efe947ad233daf75fffbe/transformed/navigation-runtime-2.7.6/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/f65174e0edbd0cf5e59bff80d4900642/transformed/navigation-common-ktx-2.7.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/8b4b9fc54bd1f2af7efc54f3a6f29ebb/transformed/navigation-runtime-ktx-2.7.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/eebfdcddfc2127576c7ebd6e21d3415c/transformed/navigation-compose-2.7.6/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3:1.1.2] /Users/vibhas/.gradle/caches/8.13/transforms/955f038f6aa8b9dea6c4d6df4a84051b/transformed/material3-1.1.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.8.2] /Users/vibhas/.gradle/caches/8.13/transforms/1d36b112fd43482a5bc1f1a6695586f3/transformed/activity-1.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.2] /Users/vibhas/.gradle/caches/8.13/transforms/4d409682480a384e2f469da864e0a71e/transformed/activity-ktx-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/702126f9115b342d3b286784a664cf93/transformed/coil-compose-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose-base:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/bd2d5da0f81d5baad0d9224f5b940dee/transformed/coil-compose-base-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/48cd0707fb479ae5dec52708e9936112/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/1a807f77353a01d3b79720636c02c407/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/4f34501cc2abd4a3b8b1c25952a784cd/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/b6025d2b7e969bd5ce551ed77ad91c05/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/7274ce63dd51ba2d61b7dfd078636e99/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/38f27125c9278b1ee60e23c981edbcbf/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/29f9febea7bd11f6a1d3f71a3ac82f17/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/aabaffdc7fb885b97af4f19d8b080d55/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/ca4ef5783c3b7cd1951f884112451912/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/2be94304b7257e92415c1a4ce6e23724/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/75e10e30c4cfd49d3c9fef7c0e188a96/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/6df7379e12a06035e53a38b41a1fb124/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/845a24ff88102c9a1c4ea1f33b4e1bd6/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/270e06b11b824064672d7d0574bfbb08/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/e62d587c471b183da743ac75d741d1c1/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.8.2] /Users/vibhas/.gradle/caches/8.13/transforms/7d47af5fc2cd5912b54a4797b072a5c1/transformed/activity-compose-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/7843868e0600827dfe8f2a1b25c36f85/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/vibhas/.gradle/caches/8.13/transforms/2dd8f771e64b82ac0d37eb3b47338243/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/vibhas/.gradle/caches/8.13/transforms/3756a37b51b48880d862df9652237177/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/cef6445b7b0ab6fbede2f50cceedacdb/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/92112c259e1056ab1348f96980f04339/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/c16e500f65274f888e25c3b135bb501f/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [io.coil-kt:coil:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/bc3b470e671ee828daac71e665fd76a0/transformed/coil-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-base:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/87a1cdd4ff8078c29af47b6ed270c631/transformed/coil-base-2.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/c40b0fd48f9cdd1d7d6281e2a73f2303/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dc3dc01b6472c98174595d4a53910e79/transformed/lifecycle-runtime-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/f3f98ec946894d17da439b9216e0e765/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/94d5b98909b13f2adf15bf77b2b21cc1/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /Users/vibhas/.gradle/caches/8.13/transforms/bb79ffbee84e1f7cc0a390b8171fbf86/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.compose.ui:ui-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/339730e8f1d5a063e4229d3be7ce7f11/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/0aa9ed572ae64d4a07682b24022142c3/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/vibhas/.gradle/caches/8.13/transforms/bcb6553f17f2385fcede62142b0b11e3/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/vibhas/.gradle/caches/8.13/transforms/0d808cdb96ad5c7e032fba94137a7021/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/vibhas/.gradle/caches/8.13/transforms/990e7ae057e62f76e442faa880058fe2/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/4810dc0478863426ff5aceca1bdcf83f/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/0d3dde97f0860939aafefc5da974ec5d/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/dfd87a94fd932dcc122d2379e6abc07f/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/c2eeec90c51117a6d90af1f25a024f46/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/b82f18f6ea1b0c3c521a0cad81d84ce3/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/ecee238a52e5e5bf8fba327835adcdb6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/f70cec04eb92272e0d57f65420860f4b/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/vibhas/.gradle/caches/8.13/transforms/fa48f56823bc06dacdd9b04c5e2458bc/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/83b1e24bf3ca3fd86de8ee2b097cc575/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/d600a4f3f419e2ebcbeadfd5a7824e04/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/vibhas/.gradle/caches/8.13/transforms/2f8d918f391d35039561f3f42c92f4ef/transformed/exifinterface-1.3.6/AndroidManifest.xml:17:1-24:12
+	package
+		INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:5:22-62
+uses-permission#android.permission.READ_MEDIA_IMAGES
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:6:22-73
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:7:5-8:38
+	android:maxSdkVersion
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:8:9-35
+	android:name
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:7:22-77
+uses-feature#android.hardware.camera
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:10:5-85
+	android:required
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:10:58-82
+	android:name
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:10:19-57
+application
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:12:5-40:19
+INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:12:5-40:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/ecee238a52e5e5bf8fba327835adcdb6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/ecee238a52e5e5bf8fba327835adcdb6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/83b1e24bf3ca3fd86de8ee2b097cc575/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/83b1e24bf3ca3fd86de8ee2b097cc575/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:15:9-38
+	android:roundIcon
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:16:9-63
+	tools:targetApi
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:19:9-29
+	android:icon
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:14:9-58
+	android:allowBackup
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:18:9-51
+activity#com.civic.priority.MainActivity
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:21:9-29:20
+	android:exported
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:23:13-36
+	android:theme
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:24:13-55
+	android:name
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:22:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:25:13-28:29
+action#android.intent.action.MAIN
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:27:27-74
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:36:13-38:54
+	android:resource
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:38:17-51
+	android:name
+		ADDED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml:37:17-67
+uses-sdk
+INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml
+INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-common:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/f8639d1cbef77607b4dc3ca699431990/transformed/navigation-common-2.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/f8639d1cbef77607b4dc3ca699431990/transformed/navigation-common-2.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/7679cd0cd90efe947ad233daf75fffbe/transformed/navigation-runtime-2.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/7679cd0cd90efe947ad233daf75fffbe/transformed/navigation-runtime-2.7.6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/f65174e0edbd0cf5e59bff80d4900642/transformed/navigation-common-ktx-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/f65174e0edbd0cf5e59bff80d4900642/transformed/navigation-common-ktx-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/8b4b9fc54bd1f2af7efc54f3a6f29ebb/transformed/navigation-runtime-ktx-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/8b4b9fc54bd1f2af7efc54f3a6f29ebb/transformed/navigation-runtime-ktx-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/eebfdcddfc2127576c7ebd6e21d3415c/transformed/navigation-compose-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.6] /Users/vibhas/.gradle/caches/8.13/transforms/eebfdcddfc2127576c7ebd6e21d3415c/transformed/navigation-compose-2.7.6/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] /Users/vibhas/.gradle/caches/8.13/transforms/955f038f6aa8b9dea6c4d6df4a84051b/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] /Users/vibhas/.gradle/caches/8.13/transforms/955f038f6aa8b9dea6c4d6df4a84051b/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] /Users/vibhas/.gradle/caches/8.13/transforms/1d36b112fd43482a5bc1f1a6695586f3/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] /Users/vibhas/.gradle/caches/8.13/transforms/1d36b112fd43482a5bc1f1a6695586f3/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /Users/vibhas/.gradle/caches/8.13/transforms/4d409682480a384e2f469da864e0a71e/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /Users/vibhas/.gradle/caches/8.13/transforms/4d409682480a384e2f469da864e0a71e/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/702126f9115b342d3b286784a664cf93/transformed/coil-compose-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/702126f9115b342d3b286784a664cf93/transformed/coil-compose-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/bd2d5da0f81d5baad0d9224f5b940dee/transformed/coil-compose-base-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/bd2d5da0f81d5baad0d9224f5b940dee/transformed/coil-compose-base-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/48cd0707fb479ae5dec52708e9936112/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/48cd0707fb479ae5dec52708e9936112/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/1a807f77353a01d3b79720636c02c407/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/1a807f77353a01d3b79720636c02c407/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/4f34501cc2abd4a3b8b1c25952a784cd/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/4f34501cc2abd4a3b8b1c25952a784cd/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/b6025d2b7e969bd5ce551ed77ad91c05/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/b6025d2b7e969bd5ce551ed77ad91c05/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/7274ce63dd51ba2d61b7dfd078636e99/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/7274ce63dd51ba2d61b7dfd078636e99/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/38f27125c9278b1ee60e23c981edbcbf/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/38f27125c9278b1ee60e23c981edbcbf/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/29f9febea7bd11f6a1d3f71a3ac82f17/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/29f9febea7bd11f6a1d3f71a3ac82f17/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/aabaffdc7fb885b97af4f19d8b080d55/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/aabaffdc7fb885b97af4f19d8b080d55/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/ca4ef5783c3b7cd1951f884112451912/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/ca4ef5783c3b7cd1951f884112451912/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/2be94304b7257e92415c1a4ce6e23724/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/2be94304b7257e92415c1a4ce6e23724/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/75e10e30c4cfd49d3c9fef7c0e188a96/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/75e10e30c4cfd49d3c9fef7c0e188a96/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/6df7379e12a06035e53a38b41a1fb124/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/6df7379e12a06035e53a38b41a1fb124/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/845a24ff88102c9a1c4ea1f33b4e1bd6/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/845a24ff88102c9a1c4ea1f33b4e1bd6/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/270e06b11b824064672d7d0574bfbb08/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/270e06b11b824064672d7d0574bfbb08/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/e62d587c471b183da743ac75d741d1c1/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/e62d587c471b183da743ac75d741d1c1/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /Users/vibhas/.gradle/caches/8.13/transforms/7d47af5fc2cd5912b54a4797b072a5c1/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /Users/vibhas/.gradle/caches/8.13/transforms/7d47af5fc2cd5912b54a4797b072a5c1/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/7843868e0600827dfe8f2a1b25c36f85/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/7843868e0600827dfe8f2a1b25c36f85/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/vibhas/.gradle/caches/8.13/transforms/2dd8f771e64b82ac0d37eb3b47338243/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /Users/vibhas/.gradle/caches/8.13/transforms/2dd8f771e64b82ac0d37eb3b47338243/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/vibhas/.gradle/caches/8.13/transforms/3756a37b51b48880d862df9652237177/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/vibhas/.gradle/caches/8.13/transforms/3756a37b51b48880d862df9652237177/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/cef6445b7b0ab6fbede2f50cceedacdb/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/cef6445b7b0ab6fbede2f50cceedacdb/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/92112c259e1056ab1348f96980f04339/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/92112c259e1056ab1348f96980f04339/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/c16e500f65274f888e25c3b135bb501f/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/c16e500f65274f888e25c3b135bb501f/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [io.coil-kt:coil:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/bc3b470e671ee828daac71e665fd76a0/transformed/coil-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/bc3b470e671ee828daac71e665fd76a0/transformed/coil-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/87a1cdd4ff8078c29af47b6ed270c631/transformed/coil-base-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.5.0] /Users/vibhas/.gradle/caches/8.13/transforms/87a1cdd4ff8078c29af47b6ed270c631/transformed/coil-base-2.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/c40b0fd48f9cdd1d7d6281e2a73f2303/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/c40b0fd48f9cdd1d7d6281e2a73f2303/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dc3dc01b6472c98174595d4a53910e79/transformed/lifecycle-runtime-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dc3dc01b6472c98174595d4a53910e79/transformed/lifecycle-runtime-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/f3f98ec946894d17da439b9216e0e765/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/f3f98ec946894d17da439b9216e0e765/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/94d5b98909b13f2adf15bf77b2b21cc1/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/94d5b98909b13f2adf15bf77b2b21cc1/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /Users/vibhas/.gradle/caches/8.13/transforms/bb79ffbee84e1f7cc0a390b8171fbf86/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /Users/vibhas/.gradle/caches/8.13/transforms/bb79ffbee84e1f7cc0a390b8171fbf86/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/339730e8f1d5a063e4229d3be7ce7f11/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/339730e8f1d5a063e4229d3be7ce7f11/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/0aa9ed572ae64d4a07682b24022142c3/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/0aa9ed572ae64d4a07682b24022142c3/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/vibhas/.gradle/caches/8.13/transforms/bcb6553f17f2385fcede62142b0b11e3/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/vibhas/.gradle/caches/8.13/transforms/bcb6553f17f2385fcede62142b0b11e3/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/vibhas/.gradle/caches/8.13/transforms/0d808cdb96ad5c7e032fba94137a7021/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/vibhas/.gradle/caches/8.13/transforms/0d808cdb96ad5c7e032fba94137a7021/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/vibhas/.gradle/caches/8.13/transforms/990e7ae057e62f76e442faa880058fe2/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/vibhas/.gradle/caches/8.13/transforms/990e7ae057e62f76e442faa880058fe2/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/4810dc0478863426ff5aceca1bdcf83f/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/4810dc0478863426ff5aceca1bdcf83f/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/0d3dde97f0860939aafefc5da974ec5d/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/0d3dde97f0860939aafefc5da974ec5d/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/dfd87a94fd932dcc122d2379e6abc07f/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/dfd87a94fd932dcc122d2379e6abc07f/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/c2eeec90c51117a6d90af1f25a024f46/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/c2eeec90c51117a6d90af1f25a024f46/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/b82f18f6ea1b0c3c521a0cad81d84ce3/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/b82f18f6ea1b0c3c521a0cad81d84ce3/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/ecee238a52e5e5bf8fba327835adcdb6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/ecee238a52e5e5bf8fba327835adcdb6/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/f70cec04eb92272e0d57f65420860f4b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/f70cec04eb92272e0d57f65420860f4b/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/vibhas/.gradle/caches/8.13/transforms/fa48f56823bc06dacdd9b04c5e2458bc/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/vibhas/.gradle/caches/8.13/transforms/fa48f56823bc06dacdd9b04c5e2458bc/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/83b1e24bf3ca3fd86de8ee2b097cc575/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/83b1e24bf3ca3fd86de8ee2b097cc575/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/d600a4f3f419e2ebcbeadfd5a7824e04/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/vibhas/.gradle/caches/8.13/transforms/d600a4f3f419e2ebcbeadfd5a7824e04/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/vibhas/.gradle/caches/8.13/transforms/2f8d918f391d35039561f3f42c92f4ef/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /Users/vibhas/.gradle/caches/8.13/transforms/2f8d918f391d35039561f3f42c92f4ef/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/vibhas/Desktop/Prio_app copy/andriod_app/app/src/main/AndroidManifest.xml
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/930e5554066e857862626fbadf538f60/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:24:13-63
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.0] /Users/vibhas/.gradle/caches/8.13/transforms/88b44ea4332a08e672ca8b232f675ff7/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/83b1e24bf3ca3fd86de8ee2b097cc575/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/vibhas/.gradle/caches/8.13/transforms/83b1e24bf3ca3fd86de8ee2b097cc575/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/vibhas/.gradle/caches/8.13/transforms/20f7119af19e0f6e109ea255c013b517/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/vibhas/.gradle/caches/8.13/transforms/dea38af7e165f979b9280ca9502d0706/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.civic.priority.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.civic.priority.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/vibhas/.gradle/caches/8.13/transforms/077df947e625d0ec6927222820de6f71/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/vibhas/.gradle/caches/8.13/transforms/9fd98b975abc8d822b7b83e9e30419a9/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

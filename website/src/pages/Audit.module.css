@@ -1,0 +1,42 @@
+/* Audit Page */
+.page { padding-bottom:3rem; }
+.hdr  { margin-bottom:1.8rem; }
+.title{ font-family:var(--head); font-size:1.8rem; font-weight:700; letter-spacing:-0.02em; }
+.sub  { color:var(--ink2); font-size:0.85rem; margin-top:0.25rem; line-height:1.65; }
+.sub strong { color:var(--blue); }
+
+.empty { background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); padding:3.5rem; text-align:center; backdrop-filter:blur(12px); }
+.emptyIcon { font-size:2.5rem; margin-bottom:1rem; opacity:0.35; }
+.emptyText { color:var(--ink2); font-size:0.9rem; line-height:1.7; }
+
+.tableWrap { background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); overflow:auto; box-shadow:var(--sh-card); backdrop-filter:blur(12px); }
+.table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+.table thead tr { border-bottom:1px solid var(--border); }
+.table th { font-family:var(--mono); font-size:0.57rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted); padding:0.9rem 1rem; text-align:left; white-space:nowrap; background:rgba(255,255,255,0.02); }
+.row  { border-bottom:1px solid rgba(255,255,255,0.04); transition:background .15s; }
+.row:last-child { border-bottom:none; }
+.row:hover { background:rgba(255,255,255,0.03); }
+.table td { padding:0.8rem 1rem; vertical-align:middle; }
+
+.mono      { font-family:var(--mono); }
+.timestamp { font-family:var(--mono); font-size:0.72rem; color:var(--ink2); white-space:nowrap; }
+.actionBadge { font-family:var(--mono); font-size:0.57rem; text-transform:uppercase; letter-spacing:0.06em; padding:0.18rem 0.5rem; background:rgba(249,115,22,0.1); border:1px solid rgba(249,115,22,0.25); border-radius:100px; color:var(--warn); white-space:nowrap; }
+.issueTd   { max-width:200px; }
+.issueTitle{ font-weight:600; font-size:0.83rem; }
+.issueId   { font-family:var(--mono); font-size:0.58rem; color:var(--muted); margin-top:0.1rem; }
+.statusChip{ font-family:var(--mono); font-size:0.58rem; text-transform:uppercase; letter-spacing:0.06em; padding:0.16rem 0.45rem; border-radius:100px; border:1px solid; white-space:nowrap; }
+.open        { background:rgba(71,118,230,0.1); border-color:rgba(71,118,230,0.3); color:var(--blue); }
+.inprogress  { background:rgba(249,115,22,0.1); border-color:rgba(249,115,22,0.3); color:var(--warn); }
+.resolved    { background:rgba(34,201,126,0.1); border-color:rgba(34,201,126,0.3); color:var(--green); }
+.adminName { font-weight:600; font-size:0.84rem; }
+.adminId   { font-family:var(--mono); font-size:0.58rem; color:var(--muted); margin-top:0.1rem; }
+.noteText  { font-size:0.8rem; color:var(--ink2); font-style:italic; }
+
+/* Access wall */
+.accessWrap  { min-height:60vh; display:flex; align-items:center; justify-content:center; }
+.accessBox   { background:var(--card); border:1px solid var(--border); border-radius:var(--r-xl); padding:3rem 2.5rem; text-align:center; max-width:460px; box-shadow:var(--sh-lg); backdrop-filter:blur(12px); }
+.accessIcon  { font-size:2.8rem; margin-bottom:1rem; }
+.accessTitle { font-family:var(--head); font-size:1.4rem; font-weight:700; margin-bottom:0.7rem; }
+.accessSub   { color:var(--ink2); font-size:0.88rem; line-height:1.7; margin-bottom:1.5rem; }
+.accessBtn   { padding:0.72rem 1.6rem; background:var(--grad-primary); color:white; border:none; border-radius:100px; font-family:var(--mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em; cursor:pointer; transition:all .2s; box-shadow:0 4px 15px rgba(71,118,230,0.3); }
+.accessBtn:hover { transform:translateY(-2px); box-shadow:0 6px 24px rgba(71,118,230,0.5); }
