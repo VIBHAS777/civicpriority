@@ -76,3 +76,7 @@
 .overrideNote:focus { border-color:var(--warn); }
 .overrideConfirm{ font-family:var(--mono); font-size:0.63rem; text-transform:uppercase; letter-spacing:0.07em; padding:0.42rem 0.95rem; background:var(--warn); color:white; border:none; border-radius:var(--r); cursor:pointer; transition:all .15s; }
 .overrideConfirm:hover { background:#dd6510; box-shadow:0 0 14px rgba(249,115,22,0.4); }
+
+/* Image styles */
+.imageWrapper { margin-top: 0.8rem; border-radius: var(--r); overflow: hidden; border: 1px solid var(--border); background: rgba(0,0,0,0.2); }
+.issueImage { width: 100%; max-height: 250px; object-fit: contain; display: block; }

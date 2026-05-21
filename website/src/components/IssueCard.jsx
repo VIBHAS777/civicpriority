@@ -39,6 +39,7 @@ export default function IssueCard({ issue, compact = false }) {
   const { show } = useToast();
   const navigate  = useNavigate();
   const [expanded,   setExpanded]   = useState(false);
+  const [showPhoto,  setShowPhoto]  = useState(false);
   const [showBD,     setShowBD]     = useState(false);
   const [overriding, setOverriding] = useState(false);
   const [noteInput,  setNoteInput]  = useState('');
@@ -81,6 +82,16 @@ export default function IssueCard({ issue, compact = false }) {
                 <button className={s.expandBtn} onClick={() => setExpanded(e=>!e)}>
                   {expanded ? ' less' : ' more'}
                 </button>
+              )}
+              {issue.imageUrl && (
+                <button className={s.expandBtn} onClick={() => setShowPhoto(p=>!p)} style={{ marginLeft: desc.length > 110 ? '8px' : '0' }}>
+                  {showPhoto ? '📷 Hide Photo' : '📷 View Photo'}
+                </button>
+              )}
+              {showPhoto && issue.imageUrl && (
+                <div className={s.imageWrapper}>
+                  <img src={issue.imageUrl} className={s.issueImage} alt="Issue evidence" />
+                </div>
               )}
             </div>
           )}
