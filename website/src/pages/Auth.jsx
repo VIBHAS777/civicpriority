@@ -190,26 +190,11 @@ export default function AuthPage() {
 
       {/* ── Right Panel ── */}
       <div className={s.right}>
-        {/* Holographic scanner effect */}
-        <div className={s.scannerLine} />
-        
-        {/* Massive HUD Frame around the card */}
-        <div className={s.hudWrapper}>
-          {/* Cyberpunk corner brackets */}
-          <div className={s.hudBracketTopLeft} />
-          <div className={s.hudBracketTopRight} />
-          <div className={s.hudBracketBottomLeft} />
-          <div className={s.hudBracketBottomRight} />
-
-          {/* Floating tech readouts */}
-          <div className={s.techReadout1}>SYS.AUTH // 89.2%</div>
-          <div className={s.techReadout2}>NET.SECURE // OK</div>
-
-          <div className={s.card}>
-            <div className={s.tabs}>
-              <button className={`${s.tab} ${mode==='login' ? s.tabActive : ''}`} onClick={() => switchMode('login')}>Sign In</button>
-              <button className={`${s.tab} ${mode==='register' ? s.tabActive : ''}`} onClick={() => switchMode('register')}>Register</button>
-            </div>
+        <div className={s.card}>
+          <div className={s.tabs}>
+            <button className={`${s.tab} ${mode==='login' ? s.tabActive : ''}`} onClick={() => switchMode('login')}>Sign In</button>
+            <button className={`${s.tab} ${mode==='register' ? s.tabActive : ''}`} onClick={() => switchMode('register')}>Register</button>
+          </div>
 
           {/* ─ LOGIN ─ */}
           {mode === 'login' && (
@@ -328,7 +313,6 @@ export default function AuthPage() {
             </div>
           )}
         </div>
-        </div> {/* Close hudWrapper */}
       </div>
     </div>
   );
