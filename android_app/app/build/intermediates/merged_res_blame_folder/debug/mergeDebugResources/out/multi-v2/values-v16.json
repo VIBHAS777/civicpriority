@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.civic.priority.app-mergeDebugResources-58:/values-v16/values-v16.xml",
+            "outputFile": "com.civic.priority.app-mergeDebugResources-59:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/vibhas/.gradle/caches/8.13/transforms/5dd2f004b117ceb1d642cd221cd52505/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/vibhas/.gradle/caches/8.13/transforms/a74c1ba8aa64bac9357af875bd33f444/transformed/core-1.12.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

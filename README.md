@@ -4,7 +4,9 @@ Civic Priority is a unified community platform designed to empower citizens to r
 
 The platform consists of two perfectly aligned frontends that connect to the same real-time backend:
 1. **React Website**: A web-based dashboard for community members and administrators to view reports and manage resources.
+   👉 **[Live Website URL: https://vibhas777.github.io/civicpriority/](https://vibhas777.github.io/civicpriority/)**
 2. **Android Application**: A native mobile app allowing citizens to quickly report issues (potholes, water leaks, etc.) on the go.
+   👉 **[Download the Latest APK (Compiled with Photo Upload) from GitHub Actions or Releases]**
 
 ## Features
 

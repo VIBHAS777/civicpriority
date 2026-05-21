@@ -1,8 +1,9 @@
 package com.civic.priority.data
 
 import androidx.compose.ui.graphics.Color
-import java.util.UUID
+import java.util.Locale
 import java.util.Date
+import java.util.UUID
 
 // ─── Auth System ───
 
@@ -30,45 +31,48 @@ enum class UserRole(val displayName: String) {
 // ─── Location and Category Enums ───
 
 enum class LocationZone(val displayName: String, val weight: Double) {
-    HOSPITAL("Hospital Zone", 1.0),
-    SCHOOL("School Zone", 0.8),
-    RESIDENTIAL("Residential Area", 0.6),
-    COMMERCIAL("Commercial District", 0.5),
-    PARK("Public Park", 0.2);
+    BLOCK_A("Block A", 0.8),
+    BLOCK_B("Block B", 0.8),
+    BLOCK_C("Block C", 0.8),
+    BASEMENT("Basement", 0.5),
+    TERRACE("Terrace", 0.5),
+    CLUBHOUSE("Clubhouse", 0.3),
+    MAIN_GATE("Main Gate", 0.7),
+    COMMON_AREA("Common Area", 0.4);
 
     companion object {
-        fun fromDisplayName(name: String): LocationZone {
-            return entries.firstOrNull { it.displayName == name } ?: RESIDENTIAL
+        fun fromDisplayName(name: String?): LocationZone {
+            return entries.firstOrNull { it.displayName == name } ?: COMMON_AREA
         }
     }
 }
 
 enum class IssueCategory(val displayName: String, val bonus: Double) {
-    LIFT_MAINTENANCE("Lift Maintenance", 5.0),
-    WATER_SUPPLY("Water Supply", 10.0),
-    SANITATION("Sanitation", 5.0),
-    ROADS("Roads & Infrastructure", 8.0),
-    ELECTRICITY("Electrical & Power", 10.0),
-    SECURITY("Security & Safety", 8.0),
-    LANDSCAPING("Landscaping", 2.0),
-    WASTE_MANAGEMENT("Waste Management", 2.0);
+    WATER_SUPPLY("Water Supply", 15.0),
+    SECURITY("Security", 14.0),
+    ELECTRICITY("Electricity", 13.0),
+    LIFT_MAINTENANCE("Lift Maintenance", 12.0),
+    GENERATOR("Generator", 10.0),
+    COMMON_AREA("Common Area", 6.0),
+    PARKING("Parking", 5.0),
+    HOUSEKEEPING("Housekeeping", 4.0);
 
     companion object {
-        fun fromDisplayName(name: String): IssueCategory {
-            return entries.firstOrNull { it.displayName == name } ?: ROADS
+        fun fromDisplayName(name: String?): IssueCategory {
+            return entries.firstOrNull { it.displayName == name } ?: COMMON_AREA
         }
     }
 }
 
-enum class IssueStatus(val displayName: String) {
-    OPEN("Open"),
-    IN_PROGRESS("In Progress"),
-    DEFERRED("Deferred"),
-    RESOLVED("Resolved");
+enum class IssueStatus(val displayName: String, val firestoreValue: String) {
+    OPEN("Open", "open"),
+    IN_PROGRESS("In Progress", "inprogress"),
+    DEFERRED("Deferred", "deferred"),
+    RESOLVED("Resolved", "resolved");
 
     companion object {
-        fun fromDisplayName(name: String): IssueStatus {
-            return entries.firstOrNull { it.displayName == name } ?: OPEN
+        fun fromFirestore(name: String?): IssueStatus {
+            return entries.firstOrNull { it.firestoreValue == name?.lowercase() } ?: OPEN
         }
     }
 }
@@ -197,6 +201,42 @@ data class Issue(
         result = 31 * result + comments.hashCode()
         return result
     }
+
+    fun toFirestoreIssue(): FirestoreIssue {
+        return FirestoreIssue(
+            id = id,
+            title = title,
+            category = category.displayName,
+            description = description,
+            severity = severity,
+            affectedPeople = affectedPeople,
+            locationType = locationType.displayName,
+            status = status.firestoreValue,
+            votes = votes.toList(),
+            reporterId = reporterId,
+            reporter = reporterName,
+            createdAt = try {
+                val sdf = java.text.SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                sdf.format(Date(dateReported))
+            } catch (e: Exception) { "" },
+            overriddenBy = if (isOverridden) "admin" else null, // The web app uses admin user id, but "admin" is fine for flag
+            comments = comments.map {
+                FirestoreComment(
+                    id = it.id,
+                    authorId = it.authorId,
+                    author = it.authorName,
+                    text = it.text,
+                    date = try {
+                        val sdf = java.text.SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                        sdf.format(Date(it.date))
+                    } catch (e: Exception) { "" }
+                )
+            },
+            imageUrl = imageData?.let {
+                "data:image/jpeg;base64," + android.util.Base64.encodeToString(it, android.util.Base64.NO_WRAP)
+            }
+        )
+    }
 }
 
 // ─── Civic Resources ───
@@ -206,3 +246,78 @@ data class CivicResources(
     var serviceVehicles: Double = 5.0,
     var workingHours: Double = 40.0
 )
+
+// ─── Firestore DTO ───
+
+data class FirestoreComment(
+    val id: Any? = null,
+    val authorId: String = "",
+    val author: String = "",
+    val text: String = "",
+    val date: String = ""
+)
+
+data class FirestoreIssue(
+    val id: Any? = null,
+    val title: String = "",
+    val category: String = "",
+    val description: String = "",
+    val severity: Double = 3.0,
+    val affectedPeople: Double = 10.0,
+    val locationType: String = "",
+    val status: String = "open",
+    val votes: List<String> = emptyList(),
+    val reporterId: String = "",
+    val reporter: String = "",
+    val createdAt: String = "",
+    val overriddenBy: String? = null,
+    val comments: List<FirestoreComment> = emptyList(),
+    val imageUrl: String? = null
+) {
+    fun toAppIssue(): Issue {
+        return Issue(
+            id = id?.toString() ?: "",
+            title = title,
+            description = description,
+            category = IssueCategory.fromDisplayName(category),
+            severity = severity,
+            affectedPeople = affectedPeople,
+            locationType = LocationZone.fromDisplayName(locationType),
+            imageData = try {
+                if (imageUrl != null && imageUrl.startsWith("data:image")) {
+                    val base64 = imageUrl.substringAfter(",")
+                    android.util.Base64.decode(base64, android.util.Base64.DEFAULT)
+                } else null
+            } catch (e: Exception) { null },
+            dateReported = try {
+                if (createdAt.isNotEmpty()) {
+                    val sdf = java.text.SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                    sdf.parse(createdAt)?.time ?: System.currentTimeMillis()
+                } else {
+                    System.currentTimeMillis()
+                }
+            } catch (e: Exception) {
+                System.currentTimeMillis()
+            },
+            reporterId = reporterId,
+            reporterName = reporter,
+            votes = votes.toMutableSet(),
+            status = IssueStatus.fromFirestore(status),
+            isOverridden = overriddenBy != null,
+            comments = comments.map {
+                Comment(
+                    id = it.id?.toString() ?: "",
+                    authorId = it.authorId,
+                    authorName = it.author,
+                    text = it.text,
+                    date = try {
+                        val sdf = java.text.SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                        sdf.parse(it.date)?.time ?: System.currentTimeMillis()
+                    } catch (e: Exception) {
+                        System.currentTimeMillis()
+                    }
+                )
+            }.toMutableList()
+        )
+    }
+}

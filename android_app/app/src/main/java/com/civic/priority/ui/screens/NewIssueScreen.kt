@@ -43,10 +43,10 @@ import kotlinx.coroutines.delay
 fun NewIssueScreen(viewModel: AppViewModel, navController: NavController) {
     var title by remember { mutableStateOf("") }
     var description by remember { mutableStateOf("") }
-    var category by remember { mutableStateOf(IssueCategory.ROADS) }
+    var category by remember { mutableStateOf(IssueCategory.COMMON_AREA) }
     var severity by remember { mutableFloatStateOf(3f) }
     var affectedPeople by remember { mutableFloatStateOf(100f) }
-    var locationType by remember { mutableStateOf(LocationZone.RESIDENTIAL) }
+    var locationType by remember { mutableStateOf(LocationZone.COMMON_AREA) }
     var selectedBitmap by remember { mutableStateOf<Bitmap?>(null) }
     var showError by remember { mutableStateOf(false) }
     var showCategoryMenu by remember { mutableStateOf(false) }
@@ -281,16 +281,14 @@ fun NewIssueScreen(viewModel: AppViewModel, navController: NavController) {
                     )
 
                     // Category picker
-                    Box {
+                    Box(modifier = Modifier.fillMaxWidth()) {
                         OutlinedTextField(
                             value = category.displayName,
                             onValueChange = {},
                             label = { Text("Category") },
                             readOnly = true,
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .clickable { showCategoryMenu = true },
-                            trailingIcon = { Icon(Icons.Default.ArrowDropDown, contentDescription = null) },
+                            modifier = Modifier.fillMaxWidth(),
+                            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = showCategoryMenu) },
                             colors = OutlinedTextFieldDefaults.colors(
                                 focusedTextColor = Color.White,
                                 unfocusedTextColor = Color.White,
@@ -300,7 +298,17 @@ fun NewIssueScreen(viewModel: AppViewModel, navController: NavController) {
                                 unfocusedLabelColor = CivicColors.TextSecondary
                             )
                         )
-                        DropdownMenu(expanded = showCategoryMenu, onDismissRequest = { showCategoryMenu = false }) {
+                        Box(
+                            modifier = Modifier
+                                .matchParentSize()
+                                .background(Color.Transparent)
+                                .clickable { showCategoryMenu = true }
+                        )
+                        DropdownMenu(
+                            expanded = showCategoryMenu,
+                            onDismissRequest = { showCategoryMenu = false },
+                            modifier = Modifier.fillMaxWidth(0.9f)
+                        ) {
                             IssueCategory.entries.forEach { cat ->
                                 DropdownMenuItem(
                                     text = { Text(cat.displayName) },
@@ -404,16 +412,14 @@ fun NewIssueScreen(viewModel: AppViewModel, navController: NavController) {
                     }
 
                     // Location picker
-                    Box {
+                    Box(modifier = Modifier.fillMaxWidth()) {
                         OutlinedTextField(
                             value = locationType.displayName,
                             onValueChange = {},
                             label = { Text("Location Zone") },
                             readOnly = true,
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .clickable { showLocationMenu = true },
-                            trailingIcon = { Icon(Icons.Default.ArrowDropDown, contentDescription = null) },
+                            modifier = Modifier.fillMaxWidth(),
+                            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = showLocationMenu) },
                             colors = OutlinedTextFieldDefaults.colors(
                                 focusedTextColor = Color.White,
                                 unfocusedTextColor = Color.White,
@@ -423,7 +429,17 @@ fun NewIssueScreen(viewModel: AppViewModel, navController: NavController) {
                                 unfocusedLabelColor = CivicColors.TextSecondary
                             )
                         )
-                        DropdownMenu(expanded = showLocationMenu, onDismissRequest = { showLocationMenu = false }) {
+                        Box(
+                            modifier = Modifier
+                                .matchParentSize()
+                                .background(Color.Transparent)
+                                .clickable { showLocationMenu = true }
+                        )
+                        DropdownMenu(
+                            expanded = showLocationMenu,
+                            onDismissRequest = { showLocationMenu = false },
+                            modifier = Modifier.fillMaxWidth(0.9f)
+                        ) {
                             LocationZone.entries.forEach { zone ->
                                 DropdownMenuItem(
                                     text = { Text(zone.displayName) },

@@ -84,86 +84,29 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
 
     private fun seedIssuesIfNeeded() {
         if (issues.isNotEmpty()) return
-
-        val now = System.currentTimeMillis()
-        val dayMs = 86400000L
-        val hourMs = 3600000L
-
-        val reporterId = users.firstOrNull()?.id ?: UUID.randomUUID().toString()
-        val reporterName = users.firstOrNull()?.username ?: "system"
-        val voter1 = if (users.size > 1) users[1].id else UUID.randomUUID().toString()
-        val voter2 = if (users.size > 2) users[2].id else UUID.randomUUID().toString()
-
-        val issue1 = Issue(
-            title = "Pothole on Main St",
-            description = "Large pothole causing traffic issues.",
-            category = IssueCategory.ROADS,
-            severity = 3.0,
-            affectedPeople = 50.0,
-            locationType = LocationZone.COMMERCIAL,
-            dateReported = now - 5 * dayMs,
-            reporterId = reporterId,
-            reporterName = reporterName,
-            votes = mutableSetOf(reporterId, voter1)
-        )
-
-        val issue2 = Issue(
-            title = "Water Main Break near Hospital",
-            description = "Water leaking heavily.",
-            category = IssueCategory.WATER_SUPPLY,
-            severity = 5.0,
-            affectedPeople = 500.0,
-            locationType = LocationZone.HOSPITAL,
-            dateReported = now - 2 * hourMs,
-            reporterId = reporterId,
-            reporterName = reporterName,
-            votes = mutableSetOf(reporterId, voter2)
-        )
-
-        val issue3 = Issue(
-            title = "Broken Park Bench",
-            description = "Bench is broken in the central park.",
-            category = IssueCategory.SANITATION,
-            severity = 1.0,
-            affectedPeople = 5.0,
-            locationType = LocationZone.PARK,
-            dateReported = now - 10 * dayMs,
-            reporterId = reporterId,
-            reporterName = reporterName,
-            votes = mutableSetOf(reporterId)
-        )
-
-        // Add dummy comment
-        if (users.size > 1) {
-            issue1.comments.add(
-                Comment(
-                    authorId = users[1].id,
-                    authorName = users[1].username,
-                    text = "We will look into this tomorrow.",
-                    date = now
-                )
-            )
+        log("Connecting to Firebase Firestore...")
+        val firestore = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+        firestore.collection("issues").addSnapshotListener { snapshot, e ->
+            log("Firestore snapshot received: error=${e?.message}, documents=${snapshot?.documents?.size}")
+            if (e != null) {
+                log("Listen failed: ${e.message}")
+                return@addSnapshotListener
+            }
+            if (snapshot != null) {
+                val newIssues = snapshot.documents.mapNotNull { doc ->
+                    try {
+                        val firestoreIssue = doc.toObject(FirestoreIssue::class.java)
+                        firestoreIssue?.copy(id = doc.id)?.toAppIssue()
+                    } catch (e: Exception) {
+                        log("Error parsing issue ${doc.id}: ${e.message}")
+                        null
+                    }
+                }
+                issues.clear()
+                issues.addAll(newIssues.sortedWith(Comparator { a, b -> Issue.sort(a, b) }))
+                log("Synced ${newIssues.size} issues from Firebase.")
+            }
         }
-
-        issues.addAll(listOf(issue1, issue2, issue3))
-
-        // Add dummy audit log
-        if (users.size > 2) {
-            auditLogs.add(
-                AuditLogEntry(
-                    timestamp = now - 5 * hourMs,
-                    actionType = "Status Override",
-                    issueTitle = "Broken Park Bench",
-                    issueId = issue3.id.take(8),
-                    oldStatus = "Open",
-                    newStatus = "Deferred",
-                    adminName = users[2].username,
-                    note = "Awaiting replacement parts from vendor."
-                )
-            )
-        }
-
-        log("System initialized with seed data.")
     }
 
     fun addIssue(
@@ -188,8 +131,13 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
             reporterId = user.id,
             reporterName = user.username
         )
-        issues.add(newIssue)
-        log("${user.username} reported: $title")
+        
+        // Write to Firebase
+        val firestore = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+        val docRef = firestore.collection("issues").document(newIssue.id)
+        docRef.set(newIssue.toFirestoreIssue())
+            .addOnSuccessListener { log("${user.username} reported: $title to Firebase") }
+            .addOnFailureListener { e -> log("Error reporting issue: ${e.message}") }
     }
 
     fun toggleVote(issueId: String) {
@@ -204,7 +152,12 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
         } else {
             newVotes.add(user.id)
         }
-        issues[index] = issue.copy(votes = newVotes)
+        
+        // Update Firebase
+        val firestore = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+        firestore.collection("issues").document(issueId)
+            .update("votes", newVotes.toList())
+            .addOnFailureListener { e -> log("Error updating votes: ${e.message}") }
     }
 
     fun addComment(issueId: String, text: String) {
@@ -214,15 +167,29 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
 
         val issue = issues[index]
         val newComments = issue.comments.toMutableList()
-        newComments.add(
-            Comment(
-                authorId = user.id,
-                authorName = user.username,
-                text = text,
-                date = System.currentTimeMillis()
-            )
+        val comment = Comment(
+            authorId = user.id,
+            authorName = user.username,
+            text = text,
+            date = System.currentTimeMillis()
         )
-        issues[index] = issue.copy(comments = newComments)
+        newComments.add(comment)
+        
+        // Update Firebase
+        val firestoreIssueComments = newComments.map { 
+            FirestoreComment(
+                id = it.id,
+                authorId = it.authorId,
+                author = it.authorName,
+                text = it.text,
+                date = java.text.SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date(it.date))
+            )
+        }
+        
+        val firestore = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+        firestore.collection("issues").document(issueId)
+            .update("comments", firestoreIssueComments)
+            .addOnFailureListener { e -> log("Error adding comment: ${e.message}") }
     }
 
     fun overrideStatus(issueId: String, newStatus: IssueStatus, note: String) {
@@ -230,27 +197,21 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
         if (index < 0) return
 
         val issue = issues[index]
-        val oldStatus = issue.status.displayName
-        issues[index] = issue.copy(
-            status = newStatus,
-            isOverridden = true
-        )
+        val user = currentUser.value ?: return
 
-        val user = currentUser.value
-        if (user != null) {
-            val entry = AuditLogEntry(
-                timestamp = System.currentTimeMillis(),
-                actionType = "Status Override",
-                issueTitle = issue.title,
-                issueId = issue.id.take(8),
-                oldStatus = oldStatus,
-                newStatus = newStatus.displayName,
-                adminName = user.username,
-                note = note
+        // Update Firebase
+        val firestore = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+        firestore.collection("issues").document(issueId)
+            .update(
+                mapOf(
+                    "status" to newStatus.firestoreValue,
+                    "overriddenBy" to user.id
+                )
             )
-            auditLogs.add(0, entry)
-            log("Admin ${user.username} overrode status of '${issue.title}' to ${newStatus.displayName}")
-        }
+            .addOnSuccessListener {
+                log("Admin ${user.username} overrode status of '${issue.title}' to ${newStatus.displayName}")
+            }
+            .addOnFailureListener { e -> log("Error overriding status: ${e.message}") }
     }
 
     fun changeUserRole(userId: String, newRole: UserRole) {
@@ -293,7 +254,7 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
             var requiredHours = 2.0
 
             when (issue.category) {
-                IssueCategory.WATER_SUPPLY, IssueCategory.ROADS -> {
+                IssueCategory.WATER_SUPPLY, IssueCategory.GENERATOR -> {
                     requiredWorkers = 3.0; requiredVehicles = 1.0; requiredHours = 8.0
                 }
                 IssueCategory.ELECTRICITY -> {
@@ -302,13 +263,13 @@ class AppViewModel(application: Application) : AndroidViewModel(application) {
                 IssueCategory.LIFT_MAINTENANCE -> {
                     requiredWorkers = 2.0; requiredVehicles = 0.0; requiredHours = 3.0
                 }
-                IssueCategory.SANITATION, IssueCategory.WASTE_MANAGEMENT -> {
+                IssueCategory.HOUSEKEEPING, IssueCategory.COMMON_AREA -> {
                     requiredWorkers = 1.0; requiredVehicles = 1.0; requiredHours = 2.0
                 }
                 IssueCategory.SECURITY -> {
                     requiredWorkers = 2.0; requiredVehicles = 1.0; requiredHours = 4.0
                 }
-                IssueCategory.LANDSCAPING -> {
+                IssueCategory.PARKING -> {
                     requiredWorkers = 1.0; requiredVehicles = 0.0; requiredHours = 4.0
                 }
             }

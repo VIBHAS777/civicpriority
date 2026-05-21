@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "369086481525",
+    "project_id": "web-app-e4d56",
+    "storage_bucket": "web-app-e4d56.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369086481525:android:d8d7527356725d7318643c",
+        "android_client_info": {
+          "package_name": "com.civic.priority"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDw_1FfQ6Bg4xMMADGn7eFBTs60wmXrfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
