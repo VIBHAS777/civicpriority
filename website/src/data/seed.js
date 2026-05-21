@@ -21,13 +21,14 @@ export const WEIGHTS = { w1: 0.35, w2: 0.25, w3: 0.20, w4: 0.20 };
 
 // Location sensitivity (0–1 scale, used with w4)
 export const LOCATION_SENSITIVITY = {
-  'Hospital Zone':  1.00,
-  'School Zone':    0.85,
-  'Highway':        0.70,
-  'Residential':    0.50,
-  'Commercial':     0.40,
-  'Industrial':     0.30,
-  'Park/Recreation':0.20,
+  'Block A':     0.80,
+  'Block B':     0.80,
+  'Block C':     0.80,
+  'Basement':    0.50,
+  'Terrace':     0.50,
+  'Clubhouse':   0.30,
+  'Main Gate':   0.70,
+  'Common Area': 0.40,
 };
 
 // Category urgency bonus (flat bonus added after weighted score)
